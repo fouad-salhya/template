@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Offres de Beauté - TopDealsDaily</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        .fade-in {
+            animation: fadeIn 1s ease-in-out;
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+        .banner {
+            background-color: #ff6961;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            border: 2px solid #ff6961;
+            animation: pulse 1s infinite;
+        }
+        @keyframes pulse {
+            0% {
+                box-shadow: 0 0 5px #ff6961;
+            }
+            50% {
+                box-shadow: 0 0 20px #ff6961;
+            }
+            100% {
+                box-shadow: 0 0 5px #ff6961;
+            }
+        }
+
+        .price {
+            text-decoration: line-through;
+            color: #e3342f;
+            margin-right: 8px;
+        }
+        .free {
+            color: #38c172;
+            font-weight: bold;
+        }
+        .card-footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-800 font-sans leading-normal tracking-normal">
+
+    <!-- Banner -->
+    <div class="banner">
+        Offre spéciale : Gratuit pour les 100 premiers visiteurs ! Il reste seulement 49 bénéficiaires et 1 jour pour en profiter !
+    </div>
+
+    <!-- Header -->
+    <header class="bg-gray-900 text-white py-4 shadow-lg mt-16">
+        <div class="container mx-auto text-center">
+            <h1 class="text-4xl font-extrabold">Bienvenue sur Luxe Beauté</h1>
+            <p class="mt-2 text-xl">Les meilleures offres de beauté rien que pour vous</p>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero" class="relative text-center bg-cover bg-center" style="background-image: url('1.webp'); height: 75vh;">
+        <div class="absolute inset-0 flex flex-col items-center justify-center bg-black bg-opacity-50 text-white px-4">
+            <h2 class="text-5xl font-extrabold mb-4 fade-in">Découvrez nos offres exclusives</h2>
+            <p class="mb-6 text-xl fade-in">Ne manquez pas nos promotions incroyables sur les produits de beauté.</p>
+            <a href="#offers" class="bg-red-500 hover:bg-red-700 text-white font-bold py-3 px-6 rounded-full text-lg fade-in">Voir les offres</a>
+        </div>
+    </section>
+
+    <!-- Offers Section -->
+    <section id="offers" class="py-12 bg-white">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-extrabold text-center mb-12">Nos Offres</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white shadow-lg rounded-lg overflow-hidden transform transition duration-500 hover:scale-105 relative">
+                    <img src="1.jpg" alt="Offre 1" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-extrabold mb-2">Crème Hydratante Visage</h3>
+                        <p class="mb-4 text-gray-600">Crème de visage hydratante pour une peau éclatante et nourrie</p>
+                        <div class="card-footer">
+                            <a href="check.html" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Profitez-en</a>
+                            <p><span class="price">24,99€</span> <span class="free">Gratuit</span></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white shadow-lg rounded-lg overflow-hidden transform transition duration-500 hover:scale-105 relative">
+                    <img src="2.jpg" alt="Offre 2" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-extrabold mb-2">Huile Capillaire Revitalisante</h3>
+                        <p class="mb-4 text-gray-600">Huile capillaire revitalisante pour des cheveux forts et brillants.</p>
+                        <div class="card-footer">
+                            <a href="check.html" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Profitez-en</a>
+                            <p><span class="price">19,99€</span> <span class="free">Gratuit</span></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white shadow-lg rounded-lg overflow-hidden transform transition duration-500 hover:scale-105 relative">
+                    <img src="3.jpg" alt="Offre 3" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-extrabold mb-2">Complément 'اللحسة الصحراوية'</h3>
+                        <p class="mb-4 text-gray-600">Complément alimentaire 'اللحسة الصحراوية' pour augmenter le poids naturellement.</p>
+                        <div class="card-footer">
+                            <a href="check.html" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Profitez-en</a>
+                            <p><span class="price">24,99€</span> <span class="free">Gratuit</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-4">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2024 TopDealsDaily. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
